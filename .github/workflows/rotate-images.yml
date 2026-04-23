@@ -14,15 +14,15 @@ jobs:
 
     steps:
       # -----------------------------
-      # 1. Checkout repo
+      # 1. Checkout
       # -----------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          fetch-depth: 0
 
       # -----------------------------
-      # 2. Setup Node
+      # 2. Node setup
       # -----------------------------
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -30,19 +30,19 @@ jobs:
           node-version: 20
 
       # -----------------------------
-      # 3. Install dependencies (IMPORTANT)
+      # 3. Install deps
       # -----------------------------
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # -----------------------------
-      # 4. Run rotation script
+      # 4. Run script
       # -----------------------------
       - name: Run rotation script
         run: node scripts/rotate.js
 
       # -----------------------------
-      # 5. Commit & push
+      # 5. Commit changes
       # -----------------------------
       - name: Commit and push changes
         run: |
@@ -51,6 +51,6 @@ jobs:
 
           git add active.json
 
-          git commit -m "Monthly wallpaper rotation" || echo "No changes to commit"
+          git commit -m "Wallpaper rotation update" || echo "No changes"
 
           git push origin HEAD:main
