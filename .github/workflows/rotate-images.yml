@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "0 0 1 * *" # 1er du mois à 00:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -14,15 +14,15 @@ jobs:
 
     steps:
       # -----------------------------
-      # 1. Checkout
+      # 1. Checkout repo avec credentials persistants
       # -----------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          persist-credentials: true
 
       # -----------------------------
-      # 2. Node setup
+      # 2. Setup Node
       # -----------------------------
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -30,27 +30,21 @@ jobs:
           node-version: 20
 
       # -----------------------------
-      # 3. Install deps
-      # -----------------------------
-      - name: Install dependencies
-        run: npm install
-
-      # -----------------------------
-      # 4. Run script
+      # 3. Run rotation script
       # -----------------------------
       - name: Run rotation script
         run: node scripts/rotate.js
 
       # -----------------------------
-      # 5. Commit changes
+      # 4. Commit & push changes safely
       # -----------------------------
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
-          git add active.json state.json
-      
-          git commit -m "Wallpaper rotation" || echo "No changes"
-      
+
+          git add active.json
+
+          git commit -m "Monthly wallpaper rotation" || echo "No changes to commit"
+
           git push origin HEAD:main
