@@ -33,6 +33,6 @@ jobs:
 
           git add active.json state.json
 
-          git commit -m "Wallpaper rotation" || echo "No changes"
+          git commit -m "Wallpaper rotation update" || echo "No changes"
 
           git push origin HEAD:main
