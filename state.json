@@ -1,3 +1,9 @@
 {
-  "offset": 6
+  "offset": 6,
+  "animals": 3,
+  "divers": 3,
+  "landscapes": 3,
+  "nature": 3,
+  "night_sky": 3,
+  "sunsets": 3
 }
