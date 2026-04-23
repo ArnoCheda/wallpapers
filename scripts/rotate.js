@@ -6,61 +6,42 @@ const statePath = "state.json";
 const ACTIVE_COUNT = 3;
 
 // load state
-let state = { offset: 0 };
+let state = {};
 
 if (fs.existsSync(statePath)) {
   state = JSON.parse(fs.readFileSync(statePath, "utf-8"));
 }
 
+function getOffset(cat, len) {
+  if (!state[cat]) state[cat] = 0;
+  return state[cat] % len;
+}
+
 function getBlock(arr, offset) {
-  const start = offset % arr.length;
+  const start = offset;
   const end = start + ACTIVE_COUNT;
 
-  if (end <= arr.length) {
-    return arr.slice(start, end);
-  }
-
-  // wrap-around si fin de liste
-  return [
-    ...arr.slice(start),
-    ...arr.slice(0, end - arr.length)
-  ];
+  return end <= arr.length
+    ? arr.slice(start, end)
+    : [...arr.slice(start), ...arr.slice(0, end - arr.length)];
 }
 
-function buildActive() {
-  const active = {};
+const active = {};
 
-  for (const [cat, data] of Object.entries(master)) {
-    active[cat] = {
-      full: getBlock(data.full, state.offset),
-      thumbs: getBlock(data.thumbs, state.offset)
-    };
-  }
+for (const [cat, data] of Object.entries(master)) {
+  const len = data.full.length;
+  const offset = getOffset(cat, len);
 
-  return active;
+  active[cat] = {
+    full: getBlock(data.full, offset),
+    thumbs: getBlock(data.thumbs, offset),
+  };
+
+  // advance per category
+  state[cat] = (offset + ACTIVE_COUNT) % len;
 }
 
-// write output
-fs.writeFileSync(
-  "active.json",
-  JSON.stringify(buildActive(), null, 2)
-);
+fs.writeFileSync("active.json", JSON.stringify(active, null, 2));
+fs.writeFileSync(statePath, JSON.stringify(state, null, 2));
 
-// update offset (avance de 3 images à chaque run)
-state.offset = state.offset + ACTIVE_COUNT;
-
-// reset propre si dépasse taille max
-const maxLen = Math.max(
-  ...Object.values(master).map(x => x.full.length)
-);
-
-if (state.offset >= maxLen) {
-  state.offset = 0;
-}
-
-fs.writeFileSync(
-  statePath,
-  JSON.stringify(state, null, 2)
-);
-
-console.log("Rotation done, offset =", state.offset);
+console.log("Rotation updated", state);
