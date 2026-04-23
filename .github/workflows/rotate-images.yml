@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 0 1 * *" # 1er du mois à 00:00 UTC
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
       # -----------------------------
-      # 1. Checkout repo avec credentials persistants
+      # 1. Checkout repo
       # -----------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,13 +30,19 @@ jobs:
           node-version: 20
 
       # -----------------------------
-      # 3. Run rotation script
+      # 3. Install dependencies (IMPORTANT)
+      # -----------------------------
+      - name: Install dependencies
+        run: npm ci
+
+      # -----------------------------
+      # 4. Run rotation script
       # -----------------------------
       - name: Run rotation script
         run: node scripts/rotate.js
 
       # -----------------------------
-      # 4. Commit & push changes safely
+      # 5. Commit & push
       # -----------------------------
       - name: Commit and push changes
         run: |
