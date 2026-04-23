@@ -1,0 +1,26 @@
+{
+  "animals": {
+    "full": [
+      "https://.../animals/DSCN1745.jpg",
+      "https://.../animals/DSCN1826.jpg",
+      "https://.../animals/DSCN2408.jpg"
+    ],
+    "thumbs": [
+      "https://.../animals/thumb1.jpg",
+      "https://.../animals/thumb2.jpg",
+      "https://.../animals/thumb3.jpg"
+    ]
+  },
+  "nature": {
+    "full": [
+      "https://.../nature/DSCN0264.jpg",
+      "https://.../nature/DSCN0345.jpg",
+      "https://.../nature/DSCN0356.jpg"
+    ],
+    "thumbs": [
+      "https://.../nature/t1.jpg",
+      "https://.../nature/t2.jpg",
+      "https://.../nature/t3.jpg"
+    ]
+  }
+}
