@@ -1,28 +1,60 @@
 {
-  "animals": [
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/animals/DSCN1826_wallpaper.jpg"
-  ],
-  "nature": [
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3200_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3216_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3193_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3296_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3212_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3207_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3189_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3317_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3185_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN0328_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3227_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3255_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3182_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3177_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3187_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3203_wallpaper.jpg"
-  ],
-  "night_sky": [
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3106_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3108_wallpaper.jpg",
-    "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3120_wallpaper.jpg"
-  ]
+  "animals": {
+    "full": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/animals/DSCN1826_wallpaper.jpg"
+    ],
+    "thumbs": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/animals/DSCN1826_wallpaper.jpg"
+    ]
+  },
+  "nature": {
+    "full": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN0328_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3177_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3182_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3185_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3187_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3189_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3193_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3200_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3203_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3207_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3212_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3216_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3227_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3255_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3296_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/nature/DSCN3317_wallpaper.jpg"
+    ],
+    "thumbs": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN0328_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3177_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3182_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3185_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3187_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3189_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3193_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3200_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3203_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3207_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3212_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3216_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3227_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3255_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3296_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/nature/DSCN3317_wallpaper.jpg"
+    ]
+  },
+  "night_sky": {
+    "full": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3106_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3108_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/images/night_sky/DSCN3120_wallpaper.jpg"
+    ],
+    "thumbs": [
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/night_sky/DSCN3106_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/night_sky/DSCN3108_wallpaper.jpg",
+      "https://raw.githubusercontent.com/ArnoCheda/wallpapers/main/thumbnails/night_sky/DSCN3120_wallpaper.jpg"
+    ]
+  }
 }
