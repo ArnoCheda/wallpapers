@@ -3,7 +3,7 @@ const fs = require("fs");
 const master = JSON.parse(fs.readFileSync("master.json", "utf-8"));
 
 const statePath = "state.json";
-const ACTIVE_COUNT = 3;
+const ACTIVE_COUNT = 5;
 
 // -----------------------------
 // LOAD STATE
