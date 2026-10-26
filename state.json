@@ -1,9 +1,9 @@
 {
   "offset": 6,
-  "animals": 1,
-  "divers": 1,
-  "landscapes": 2,
-  "nature": 5,
-  "night_sky": 2,
-  "sunsets": 5
+  "animals": 6,
+  "divers": 0,
+  "landscapes": 7,
+  "nature": 10,
+  "night_sky": 7,
+  "sunsets": 0
 }
